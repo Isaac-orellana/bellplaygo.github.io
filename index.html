@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bell Play S.L. - Apps Creativas</title>
+  <title>Bell Play S.L. - Desarrollo de apps móviles</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #ff6f61;
-      --bg: #fdfdfd;
-      --shadow: rgba(0, 0, 0, 0.1);
+      --primary: #3b82f6;
+      --bg: #f9fafb;
+      --text: #1f2937;
+      --muted: #6b7280;
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -25,75 +26,66 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #333;
+      color: var(--text);
     }
 
     .card {
       width: 90%;
-      max-width: 700px;
-      background: white;
-      border-radius: 20px;
+      max-width: 720px;
+      background-color: #fff;
+      border-radius: 16px;
       padding: 40px 30px;
-      box-shadow: 0 10px 30px var(--shadow);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       text-align: center;
-    }
-
-    .logo {
-      font-size: 3rem;
-      margin-bottom: 20px;
     }
 
     h1 {
       font-size: 2rem;
-      color: var(--primary);
       margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-      line-height: 1.5;
+      color: var(--primary);
     }
 
     .tagline {
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: #555;
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 30px;
     }
 
-    .contact-btn {
-      background-color: var(--primary);
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 12px;
+    .description {
       font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 10px;
-      transition: background 0.3s;
+      line-height: 1.6;
+      margin-bottom: 25px;
     }
 
-    .contact-btn:hover {
-      background-color: #e85c50;
+    .contact {
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
     }
 
     .footer {
-      margin-top: 25px;
+      margin-top: 30px;
       font-size: 0.85rem;
-      color: #999;
+      color: var(--muted);
     }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <div class="logo">📱✨</div>
     <h1>Bell Play S.L.</h1>
-    <p class="tagline">Apps móviles con alma japonesa 🧠🎌</p>
-    <p>Desarrollamos aplicaciones útiles, limpias y creativas, pensadas para mejorar el día a día de personas reales.</p>
-    <a class="contact-btn" href="mailto:bellplaygo@gmail.com">Contáctanos</a>
+    <div class="tagline">Desarrollo de aplicaciones móviles</div>
+    <div class="description">
+      Creamos apps modernas, útiles y accesibles para todas las personas. Desde herramientas de salud hasta juegos o productividad, construimos experiencias que marcan la diferencia.
+    </div>
+    <div class="contact">
+      📩 Correo: <a href="mailto:bellplaygo@gmail.com">bellplaygo@gmail.com</a>
+    </div>
     <div class="footer">© 2025 Bell Play S.L.</div>
   </div>
 
