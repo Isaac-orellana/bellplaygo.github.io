@@ -3,89 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bell Play S.L. - Apps que dan vida</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <title>Bell Play S.L. - Apps Creativas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    :root {
+      --primary: #ff6f61;
+      --bg: #fdfdfd;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Fredoka', sans-serif;
-      background: #fef8f2;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: var(--bg);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #333;
     }
-    header {
-      background: #ff7f50;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    main {
-      max-width: 800px;
-      margin: 40px auto;
+
+    .card {
+      width: 90%;
+      max-width: 700px;
       background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #ff7f50;
-      margin-top: 0;
-    }
-    .icon {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-    .section {
-      margin-bottom: 40px;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #ff7f50;
-      color: white;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    footer {
+      border-radius: 20px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 30px var(--shadow);
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #ffe4d2;
-      color: #777;
+    }
+
+    .logo {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .tagline {
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .contact-btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .contact-btn:hover {
+      background-color: #e85c50;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 0.85rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <div class="card">
+    <div class="logo">📱✨</div>
     <h1>Bell Play S.L.</h1>
-    <p>🎮 Apps que inspiran, divierten y conectan</p>
-  </header>
+    <p class="tagline">Apps móviles con alma japonesa 🧠🎌</p>
+    <p>Desarrollamos aplicaciones útiles, limpias y creativas, pensadas para mejorar el día a día de personas reales.</p>
+    <a class="contact-btn" href="mailto:bellplaygo@gmail.com">Contáctanos</a>
+    <div class="footer">© 2025 Bell Play S.L.</div>
+  </div>
 
-  <main>
-    <div class="section">
-      <div class="icon">📱✨</div>
-      <h2>¿Qué hacemos?</h2>
-      <p>Desarrollamos aplicaciones móviles con alma. Desde apps educativas hasta herramientas creativas o juegos con chispa.</p>
-    </div>
-
-    <div class="section">
-      <div class="icon">👩‍💻🧠</div>
-      <h2>¿Quiénes somos?</h2>
-      <p>Un equipo joven y soñador, enfocado en crear experiencias útiles, bonitas y diferentes para todos los públicos.</p>
-    </div>
-
-    <div class="section">
-      <div class="icon">📬💌</div>
-      <h2>Contacto</h2>
-      <p>¿Tienes una idea? ¿Quieres colaborar? ¡Escríbenos!</p>
-      <a
+</body>
+</html>
